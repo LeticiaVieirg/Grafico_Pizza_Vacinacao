@@ -10,4 +10,4 @@ fig2=px.line(df,x='date', y='total_vaccinations', color='location',
 fig2.update_layout(xaxis_title='Data', yaxis_title='Total de pessoas vacinadas')
 fig2.show()
 
-st.plotly_char(fig2, use_container_width=True)
+st.plotly_chart(fig2, use_container_width=True)
