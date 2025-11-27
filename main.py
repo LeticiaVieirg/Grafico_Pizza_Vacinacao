@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-df=pd.read_csv('/content/vacinacao_corrigido.csv')
+df=pd.read_csv('vacinacao_corrigido.csv')
 
 fig2=px.line(df,x='date', y='total_vaccinations', color='location',
              title='Total de pessoas vacinadas por data e país - Segundo OMS')
