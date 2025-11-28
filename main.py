@@ -12,6 +12,7 @@ fig2.show()
 
 st.plotly_chart(fig2, use_container_width=True)
 
+df_filtro=df.query('location == "BRAZIL" or location == "INDIA" or location =="UNITED STATES"')
 
 fig3=px.pie(df_filtro, values='people_fully_vaccinated', 
             names='location', title='Dados comparativos de pessoas totalmente vacinadas')
